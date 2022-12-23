@@ -3,7 +3,6 @@ package com.blandygbc.forum.dto;
 import javax.validation.constraints.NotBlank;
 
 import com.blandygbc.forum.model.Topico;
-import com.blandygbc.forum.repository.TopicoRepository;
 
 public class AtualizacaoTopicoForm {
 
