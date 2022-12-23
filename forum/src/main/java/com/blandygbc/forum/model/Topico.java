@@ -31,7 +31,25 @@ public class Topico {
 	@OneToMany(mappedBy = "topico")
 	private List<Resposta> respostas = new ArrayList<>();
 
-	public Topico(String titulo2, String mensagem2, Curso curso2) {
+	public Topico() {
+	}
+
+	public Topico(String titulo, String mensagem, Usuario autor, Curso curso) {
+		this.titulo = titulo;
+		this.mensagem = mensagem;
+		this.autor = autor;
+		this.curso = curso;
+	}
+
+	public Topico(String titulo, String mensagem) {
+		this.titulo = titulo;
+		this.mensagem = mensagem;
+	}
+
+	public Topico(String titulo, String mensagem, Curso curso) {
+		this.titulo = titulo;
+		this.mensagem = mensagem;
+		this.curso = curso;
 	}
 
 	@Override

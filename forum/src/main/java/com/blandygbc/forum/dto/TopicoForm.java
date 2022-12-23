@@ -4,9 +4,13 @@ import com.blandygbc.forum.model.Curso;
 import com.blandygbc.forum.model.Topico;
 import com.blandygbc.forum.repository.CursoRepository;
 
+import javax.validation.constraints.NotBlank;
+
 public class TopicoForm {
 
+    @NotBlank
     private String titulo;
+    @NotBlank
     private String mensagem;
     private Long cursoId;
 
@@ -35,7 +39,7 @@ public class TopicoForm {
     }
 
     public Topico converter(CursoRepository cursoRepository) {
-        Curso curso = cursoRepository.findById(this.getCursoId()).orElse(new Curso());
+        Curso curso = cursoRepository.findById(this.cursoId).orElse(new Curso());
 
         return new Topico(this.titulo, this.mensagem, curso);
     }
