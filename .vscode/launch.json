@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch SpringBootAdminApplication",
+            "request": "launch",
+            "mainClass": "com.blandygbc.springbootadmin.SpringBootAdminApplication"
+        },
+        {
+            "type": "java",
             "name": "Launch SecurityConfigurations",
             "request": "launch",
             "mainClass": "com.blandygbc.forum.config.security.SecurityConfigurations",
@@ -17,6 +23,16 @@
             "args": "",
             "envFile": "${workspaceFolder}/.env",
             "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=43649 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=forum"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringBootAdminApplication<spring-boot-admin>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.blandygbc.springbootadmin.SpringBootAdminApplication",
+            "projectName": "spring-boot-admin",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }
