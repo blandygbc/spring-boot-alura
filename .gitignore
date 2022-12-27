@@ -1,1 +1,2 @@
 .env
+forum/src/main/resources/application-test.properties
