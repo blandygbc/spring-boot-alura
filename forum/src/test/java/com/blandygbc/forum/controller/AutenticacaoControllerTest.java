@@ -1,7 +1,6 @@
 package com.blandygbc.forum.controller;
 
 import java.net.URI;
-import java.net.URISyntaxException;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
